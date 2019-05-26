@@ -52,7 +52,7 @@ To run first Typescript code, do the followings
 ### tsconfig.json 
 Typescript compiler can take a number of commandline options ( like -w for watch mode, -t VERSION to specify ECMAScript target version etc ) while compiling a file. But for large scale application, it is not practical to use commandline everytime to pass these options. So the compiler has an option of specifing a configuration file named **tsconfig.json** which contains all those arguments and we can run the compiler without any argumants. It just refers to that configuration file and gets all the information it needs. 
 
-The presence of a **tsconfig.json** file in a directory indicates that the directory is the root of a TypeScript project. The tsconfig.json file specifies the root files and the compiler options required to compile the project. A project is compiled in one of the following ways:
+The presence of a **tsconfig.json** file in a directory indicates that the directory is the root of a TypeScript project. The tsconfig.json file specifies the root files and the compiler options required to compile the project.
 
 #### Setup
 We need to run following command in the root of the project folder to initialize tsconfig.
@@ -66,6 +66,8 @@ tsc
  For current example, only **tsc** command can generate hello_world.js.
 
 #### Using tsconfig.json
+A project is compiled in one of the following ways:
+
 1) By invoking tsc with no input files, in which case the compiler searches for the tsconfig.json file starting in the current directory and continuing up the parent directory chain.
 2) By invoking tsc with no input files and a --project (or just -p) command line option that specifies the path of a directory containing a tsconfig.json file, or a path to a valid .json file containing the configurations.
 
