@@ -25,7 +25,7 @@ npm i -g typescript
 
 Once completed, run following command to check if Typescript compiler installed properly
 ```sh
-tsc --v
+tsc -v
 ```
 The output should be something like
 ```sh
